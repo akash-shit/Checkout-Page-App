@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout page</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <nav id="main-nav">
+        <h1 class="brand">Cafe Coffee</h1>
+    </nav>
+    <div class="page">
+        <section class="order-box box">
+            <h2 class="box-title">Your Order Summary</h2>
+            <ul class="items">
+                <li class="item">
+                    <div class="item-quantity">
+                        1x
+                    </div>
+                    <div class="item-title">Cappuccino</div>
+                    <div class="item-price">$9.99</div>
+                    <ul class="item-options-list">
+                        <li class="item-option">
+                            light foam
+                        </li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <div class="item-quantity">
+                        1x
+                    </div>
+                    <div class="item-title">Black Coffee</div>
+                    <div class="item-price">$5.75</div>
+                    <ul class="item-options-list">
+                        <li class="item-option">
+                            light foam
+                        </li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <div class="item-quantity">
+                        1x
+                    </div>
+                    <div class="item-title">Straberry Waffle</div>
+                    <div class="item-price">$7.76</div>
+                    <ul class="item-options-list">
+                        <li class="item-option">
+                            light foam
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="add-item">
+                <button class="add-item-button">Add more item</button>
+            </div>
+        </section>
+        <section class="payment">
+            <div class="namebox box">
+                <h2 class="box-title">
+                    Custmer Info
+                </h2>
+                <div class="input-group">
+                    <label for="name" class="user-input-label">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" class="user-input">
+                </div>
+            </div>
+            <div class="cc-box box">
+                <h2 class="box-title">Payement Details</h2>
+                <div class="input-group">
+                    <label for="cc-number" class="user-input-label">Credit Card Number</label>
+                    <input type="text" id="cc-number" name="cc-number" placeholder="Enter Your Credit Card Number" class="user-input">
+                </div>
+                <div class="input-group">
+                    <label for="CVV" class="user-input-label">CVV</label>
+                    <input type="text" id="cc-number" name="cc-number" placeholder="Enter Your CVV" class="user-input short-input">
+                </div>
+            </div>
+        </section>
+        <section class="total box">
+            <table class="total-table">
+                <tbody>
+                    <tr>
+                        <td>Subtotal:</td>
+                        <td>$23.5</td>
+                    </tr>
+                    <tr>
+                        <td>Tax:</td>
+                        <td>$1.5</td>
+                    </tr>
+                    <tr class="final-total">
+                        <td>Total:</td>
+                        <td>$25</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="checkout">Place Order</button>
+        </section>
+    </div>
+
+</body>
+</html>
